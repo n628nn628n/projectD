@@ -1,42 +1,12 @@
-#README
-Hello i'm David Chen !
+#Hello i'm David Chen !
+===========================
 README
 ===========================
 該文件用來測試和展示書寫README的各種markdown語法。 GitHub的markdown語法在標準的markdown語法基礎上做了擴充，稱之為`GitHub Flavored Markdown`。簡稱`GFM`，GFM在GitHub上有廣泛應用，除了README文件外，issues和wiki均支持markdown語法。
 ****
-### Author:果凍蝦仁
-### E-mail:Jelly.K.Wang@qq.com
-****
-## 目錄
-* [橫線](#橫線)
-* [標題](#標題)
-* [文本](#文本)
-    * 普通文本
-    * 單行文本
-    * 多行文本
-    * 文字高亮
-    * 換行
-    * 斜體
-    * 粗體
-    * 刪除線
-* [圖片](#圖片)
-    * 來源於網絡的圖片
-    * GitHub倉庫中的圖片
-* [鏈接](#鏈接)
-    * 文字超鏈接
-        * 鏈接外部URL
-        * 鏈接本倉庫裡的URL
-    * 錨點
-    * [圖片鏈接](#圖片鏈接)
-* [列表](#列表)
-    * 無序列表
-    * 有序列表
-    * 複選框列表
-* [塊引用](#塊引​​用)
-* [代碼高亮](#代碼高亮)
-* [表格](#表格)
-* [表情](#表情)
-* [diff語法](#diff語法)
+### Author:David_Chen
+### E-mail:n628nn628n@gmail.com
+===========================
 
 ### 橫線
 -----------
@@ -114,82 +84,12 @@ ___
 
     斜體、粗體、刪除線可混合使用
 
-圖片
-------
-基本格式：
-```
-![alt](URL title)
-```
-alt和title即對應HTML中的alt和title屬性（都可省略）：
-- alt表示圖片顯示失敗時的替換文本
-- title表示鼠標懸停在圖片時的顯示文本（注意這裡要加引號）
-
-URL即圖片的url地址，如果引用本倉庫中的圖片，直接使用**相對路徑**就可了，如果引用其他github倉庫中的圖片要注意格式，即：`倉庫地址/raw/分支名/圖片路徑`，如：
-```
-https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-```
-
-|#|語法|效果|
-|---|---|----
-|1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo. gif "百度logo")
-|2|`![][foryou]`|![][foryou]
-
-注意例2的寫法使用了**URL標識符**的形式，在[鏈接](#鏈接)一節有介紹。
->在文末有foryou的定義：
-```
-[foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-```
-
-鏈接
-------
-### 鏈接外部URL
-|#|語法|效果|
-|---|----|-----|
-|1|`[我的博客](http://blog.csdn.net/guodongxiaren "懸停顯示")`|[我的博客](http://blog.csdn.net/guodongxiaren "懸停顯示")|
-|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
-
-語法2由兩部分組成：
-- 第一部分使用兩個中括號，[ ]裡的標識符（本例中zhihu），可以是數字，字母等的組合，標識符上下對應就行了（**姑且稱之為URL標識符**）
-- 第二部分標記實際URL。
-
->使用URL標識符能達到復用的目的，一般把全文所有的URL標識符統一放在文章末尾，這樣看起來比較乾淨。
->>URL標識符是我起的名字，不知道是否準確。囧。 。
-
-### 鏈接本倉庫裡的URL
-|語法|效果|
-|----|-----|
-|`[我的簡介](/example/profile.md)`|[我的簡介](/example/profile.md)|
-|`[Book](./Book)`|[Book](/Book)|
-
-### 圖片鏈接
-給圖片加鏈接的本質是混合圖片顯示語法和普通的鏈接語法。普通的鏈接中[ ]內部是鏈接要顯示的文本，而圖片鏈接[ ]裡面則是要顯示的圖片。
-直接混合兩種語法當然可以，但是十分囉嗦，為此我們可以使用URL標識符的形式。
-
-|#|語法|效果|
-|---|----|:---:|
-|1|`[![weibo-logo]](http://weibo.com/linpiaochen)`|[![weibo-logo]](http://weibo.com/linpiaochen)|
-|2|`[![](/img/zhihu.png "我的知乎，歡迎關注")][zhihu]`|[![](/img/zhihu.png "我的知乎，歡迎關注")][zhihu]|
-|3|`[![csdn-logo]][csdn]`|[![csdn-logo]][csdn]|
-
-因為圖片本身和鏈接本身都支持URL標識符的形式，所以圖片鏈接也可以很簡潔（見例3）。
-注意，此時鼠標懸停時顯示的文字是圖片的title，而非鏈接本身的title了。
-> 本文URL標識符都放置於文末
-
-### 錨點
-其實呢，每一個標題都是一個錨點，和HTML的錨點（`#`）類似，比如我們
-
-|語法|效果|
-|---|---|
-|`[回到頂部](#readme)`|[回到頂部](#readme)|
-
-不過要注意，標題中的英文字母都被轉化為**小寫字母**了。
-> 以前GitHub對中文支持的不好，所以中文標題不能正確識別為錨點，但是現在已經沒問題啦！
 
 ## 列表
 ### 無序列表
-* 暱稱：果凍蝦仁
-- 別名：隔壁老王
-* 英文名：Jelly
+* 暱稱：David
+- 別名：Chen
+* 英文名：VV
 
 ### 多級無序列表
 * 編程語言
@@ -280,3 +180,5 @@ string &operator+(const string& A,const string& B) //cpp
 表格單元 | 表格單元 |
 
 | 表頭1 | 表頭2|
+
+來源:https://github.com/n628nn628n/projectD/blob/master/README.md#%E6%96%87%E6%9C%AC
