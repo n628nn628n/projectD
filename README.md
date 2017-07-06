@@ -2,7 +2,6 @@
 ===========================
 README
 ===========================
-該文件用來測試和展示書寫README的各種markdown語法。 GitHub的markdown語法在標準的markdown語法基礎上做了擴充，稱之為`GitHub Flavored Markdown`。簡稱`GFM`，GFM在GitHub上有廣泛應用，除了README文件外，issues和wiki均支持markdown語法。
 ****
 ### Author:David_Chen
 ### E-mail:n628nn628n@gmail.com
@@ -181,4 +180,4 @@ string &operator+(const string& A,const string& B) //cpp
 
 | 表頭1 | 表頭2|
 
-來源:https://github.com/n628nn628n/projectD/blob/master/README.md#%E6%96%87%E6%9C%AC
+來源:https://github.com/guodongxiaren/README
